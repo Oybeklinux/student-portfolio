@@ -129,12 +129,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static') # deploy uchun
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'assets'),  # debug uchun assets
-]
+if DEBUG:
+    STATICFILES_DIRS = [
+            os.path.join(BASE_DIR, 'assets'),  # debug uchun assets
+        ]
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static') # deploy uchun
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+else:
+    STATIC_ROOT = ''  # deploy uchun
+    MEDIA_ROOT = ''
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = "/media/"
 
 
