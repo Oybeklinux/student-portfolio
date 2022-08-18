@@ -129,13 +129,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = '/static/' # deploy uchun
-# STATICFILES_DIRS = [
-#         os.path.join(BASE_DIR, 'assets'),  # debug uchun assets
-#     ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static') # deploy uchun
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'assets'),  # debug uchun assets
+]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = ""
+MEDIA_URL = "/media/"
 
 
 # Default v cvcnnnnnnnnnnnbbbbbbbbbb nnnnnnnnnnn  nhnvvvvvvvvvvvvvvvvvvvvvv gnnnnnnn bbbbbb ngffffffffx ZZZZZZZZZZZZZZZZ  primary key field type

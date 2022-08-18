@@ -123,6 +123,7 @@ __pypackages__/
 celerybeat-schedule
 celerybeat.pid
 virtual
+static
 # SageMath parsed files
 *.sage.py
 db.sqlite3
