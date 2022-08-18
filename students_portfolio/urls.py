@@ -46,4 +46,4 @@ urlpatterns = [
 # rasm, fayl, videolarni url orqali ochish uchun
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 # css, jss va boshqa static fayllarni url orqali ochish uchun
-# urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
