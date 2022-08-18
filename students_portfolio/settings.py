@@ -136,8 +136,8 @@ if DEBUG:
     STATIC_ROOT = os.path.join(BASE_DIR, 'static') # deploy uchun
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 else:
-    STATIC_ROOT = ''  # deploy uchun
-    MEDIA_ROOT = ''
+    STATIC_ROOT = '/home/dasturc1/dasturchikerak.uz/static/'  # deploy uchun
+    MEDIA_ROOT = '/home/dasturc1/dasturchikerak.uz/media/'
 
 MEDIA_URL = "/media/"
 
