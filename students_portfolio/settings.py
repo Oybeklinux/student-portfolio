@@ -15,10 +15,17 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 import environ
 
-env = environ.Env()
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+env = environ.Env(
+    DEBUG=(bool, True),
+    STATIC_ROOT=(str, os.path.join(BASE_DIR, 'static')),
+    MEDIA_ROOT=(str, os.path.join(BASE_DIR, 'media'))
+
+)
 environ.Env.read_env()
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -28,7 +35,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(env('DEBUG'))
+DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = ['dasturchkerak.uz', 'www.dasturchkerak.uz', '127.0.0.1']
 CORS_ALLOW_ALL_ORIGINS = True
@@ -129,20 +136,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = '/static/'
-if DEBUG:
-    STATICFILES_DIRS = [
-            os.path.join(BASE_DIR, 'assets'),  # debug uchun assets
-        ]
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static') # deploy uchun
-    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-else:
-    STATIC_ROOT = '/home/dasturc1/dasturchikerak.uz/static/'  # deploy uchun
-    MEDIA_ROOT = '/home/dasturc1/dasturchikerak.uz/media/'
-
+STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, 'assets'),  # debug uchun assets
+    ]
 MEDIA_URL = "/media/"
 
 
-# Default v cvcnnnnnnnnnnnbbbbbbbbbb nnnnnnnnnnn  nhnvvvvvvvvvvvvvvvvvvvvvv gnnnnnnn bbbbbb ngffffffffx ZZZZZZZZZZZZZZZZ  primary key field type
+# Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
