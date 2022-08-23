@@ -17,6 +17,19 @@ class Project(models.Model):
     def __str__(self):
         return f"{self.title}"
 
+    @property
+    def update_vote_count(self):
+        reviews = self.review_set.all()
+        print(reviews)
+        upVotes = reviews.filter(value=1).count()
+        totalVotes = reviews.count()
+
+        ratio = (upVotes / totalVotes) * 100
+        self.vote_count = totalVotes
+        self.vote_ratio = ratio
+
+        self.save()
+
 
 class Message(models.Model):
     subject = models.CharField(max_length=100)

@@ -1,10 +1,73 @@
 from .serializers import *
-from rest_framework import viewsets
+from rest_framework import viewsets, mixins, generics
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.response import Response
+from rest_framework.views import APIView
 
 
+# api_view
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_projects(request):
+    print(request.user)
+    projects = Project.objects.all().order_by('-vote_count')
+    serializer = ProjectSerializer(projects, many=True)
+    return Response(serializer.data)
+
+
+# APIVIEW
+class ProjectAPIView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        projects = Project.objects.all()
+        serializer = ProjectSerializer(projects, many=True)
+        return Response(serializer.data)
+
+
+# Mixin
+class ProjectMixin(mixins.ListModelMixin, generics.GenericAPIView):
+    queryset = Project.objects.all()
+    serializer_class = ProjectSerializer
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        return self.list(request)
+
+
+# Generic view
+class ProjectGeneric(generics.ListCreateAPIView):
+    queryset = Project.objects.all()
+    serializer_class = ProjectSerializer
+    permission_classes = [IsAuthenticated]
+
+
+# ViewSet
 class ProjectViewSet(viewsets.ModelViewSet):
     queryset = Project.objects.all()
     serializer_class = ProjectSerializer
+    permission_classes = [IsAuthenticated]
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def set_project_vote(request, pk):
+    user = request.user.profile
+    data = request.data
+    print(user, data)
+    project = Project.objects.get(pk=pk)
+    #
+    review, created = Review.objects.get_or_create(
+        user=user,
+        project=project
+    )
+    review.value = data['value']
+    review.save()
+    project.update_vote_count
+    #
+    serializers = ProjectSerializer(project, many=False)
+    return Response(serializers.data)
 
 
 class ReviewViewSet(viewsets.ModelViewSet):
