@@ -8,6 +8,7 @@ from .models import User
 from django.contrib.auth import authenticate, login, logout
 from rest_framework.authtoken.models import Token
 from django.conf import settings
+from rest_framework import filters
 
 from .serializers import UserSerializer
 
@@ -231,4 +232,6 @@ class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.filter(role='developer')
     serializer_class = UserSerializer
     permission_classes = [IsAuthenticatedOrReadOnly]
+    filter_backends = [filters.SearchFilter]
+    search_fields = ['first_name', 'last_name', 'username']
     http_method_names = ['get', 'patch', 'put', 'delete']
