@@ -1,83 +1,28 @@
-from .serializers import *
-from rest_framework import viewsets, mixins, generics
-from rest_framework.permissions import IsAuthenticated
-from rest_framework.decorators import api_view, permission_classes, authentication_classes
+from django.shortcuts import get_object_or_404
 from rest_framework.response import Response
-from rest_framework.views import APIView
-from rest_framework.authentication import BasicAuthentication, SessionAuthentication
-from rest_framework_simplejwt.authentication import JWTAuthentication
 
-
-# api_view
-@api_view(['GET'])
-@permission_classes([IsAuthenticated])
-@authentication_classes([BasicAuthentication, SessionAuthentication])
-def get_projects(request):
-    print(request.user)
-    projects = Project.objects.all().order_by('-vote_count')
-    serializer = ProjectSerializer(projects, many=True)
-    return Response(serializer.data)
-
-
-# APIVIEW
-class ProjectAPIView(APIView):
-    permission_classes = [IsAuthenticated]
-    authentication_classes = [BasicAuthentication, SessionAuthentication]
-
-    def get(self, request):
-        projects = Project.objects.all()
-        serializer = ProjectSerializer(projects, many=True)
-        return Response(serializer.data)
-
-
-# Mixin
-class ProjectMixin(mixins.ListModelMixin, generics.GenericAPIView):
-    queryset = Project.objects.all()
-    serializer_class = ProjectSerializer
-    permission_classes = [IsAuthenticated]
-
-    def get(self, request):
-        return self.list(request)
-
-
-# Generic view
-class ProjectGeneric(generics.ListCreateAPIView):
-    queryset = Project.objects.all()
-    serializer_class = ProjectSerializer
-    permission_classes = [IsAuthenticated]
+from .serializers import *
+from rest_framework import viewsets, status
+from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
 
 
 # ViewSet
 class ProjectViewSet(viewsets.ModelViewSet):
     queryset = Project.objects.all()
     serializer_class = ProjectSerializer
-    permission_classes = [IsAuthenticated]
-    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAuthenticatedOrReadOnly]
 
+    def create(self, request, *args, **kwargs):
+        data = request.data
+        user = get_object_or_404(User, id=data.get('user'))
+        tags = Tag.objects.filter(id__in=data.get('tag'))
 
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save(user=user, tag=tags)
+        headers = self.get_success_headers(serializer.data)
 
-
-
-
-
-@api_view(['POST'])
-@permission_classes([IsAuthenticated])
-def set_project_vote(request, pk):
-    user = request.user.profile
-    data = request.data
-    print(user, data)
-    project = Project.objects.get(pk=pk)
-    #
-    review, created = Review.objects.get_or_create(
-        user=user,
-        project=project
-    )
-    review.value = data['value']
-    review.save()
-    project.update_vote_count
-    #
-    serializers = ProjectSerializer(project, many=False)
-    return Response(serializers.data)
+        return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
 
 
 class ReviewViewSet(viewsets.ModelViewSet):
@@ -98,128 +43,3 @@ class SkillViewSet(viewsets.ModelViewSet):
 class MessageViewSet(viewsets.ModelViewSet):
     queryset = Message.objects.all()
     serializer_class = MessageSerializer
-
-
-
-
-'''
-class Projects(generics.ListCreateAPIView):
-    queryset = Project.objects.all()
-    serializer_class = ProjectSerializer
-
-
-class ProjectDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Project.objects.all()
-    serializer_class = ProjectSerializer
-
-'''
-'''
-class Projects(mixins.ListModelMixin, mixins.CreateModelMixin, generics.GenericAPIView):
-    queryset = Project.objects.all()
-    serializer_class = ProjectSerializer
-
-    def get(self, request):
-        return self.list(request)
-
-    def post(self, request):
-        return self.create(request)
-
-
-class ProjectDetail(mixins.RetrieveModelMixin, mixins.UpdateModelMixin, mixins.DestroyModelMixin, generics.GenericAPIView):
-    queryset = Project.objects.all()
-    serializer_class = ProjectSerializer
-
-    def get(self, request, pk):
-        return self.retrieve(request, pk)
-
-    def put(self, request, pk):
-        return self.update(request, pk)
-
-    def delete(self, request, pk):
-        return self.destroy(request, pk)
-'''
-'''
-class Projects(APIView):
-
-    def get(self, request):
-        projects = Project.objects.all()
-        serializer = ProjectSerializer(projects, many=True)
-        return Response(serializer.data)
-
-    def post(self, request):
-        serializer = ProjectSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-
-class ProjectDetail(APIView):
-
-    def get_object(self, pk):
-        try:
-            return Project.objects.get(id=pk)
-        except Project.DoesNotExist:
-            raise Http404
-
-    def get(self, request, pk):
-        project = self.get_object(pk)
-        serializer = ProjectSerializer(project)
-        return Response(serializer.data)
-
-    def put(self, request, pk):
-        project = self.get_object(pk)
-        serializer = ProjectSerializer(project, data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-    def patch(self, request, pk):
-        project = self.get_object(pk)
-        serializer = ProjectSerializer(project, data=request.data, partial=True)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-    def delete(self, request, pk):
-        project = self.get_object(pk)
-        project.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
-'''
-'''
-@api_view(['GET', 'POST'])
-def projects(request):
-    if request.method == 'GET':
-        projects = Project.objects.all()
-        serializer = ProjectSerializer(projects, many=True)
-        return Response(serializer.data)
-    elif request.method == 'POST':
-        serializer = ProjectSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        else:
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-
-@api_view(['PUT', 'DELETE', 'GET'])
-def project_detail(request, pk):
-    try:
-        project = Project.objects.get(pk=pk)
-    except Project.DoesNotExist:
-        return Response(status=status.HTTP_404_NOT_FOUND)
-    if request.method == 'GET':
-        serializer = ProjectSerializer(project)
-        return Response(serializer.data)
-    elif request.method == 'PUT':
-        serializer = ProjectSerializer(project,data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    elif request.method == 'DELETE':
-        project.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
-'''

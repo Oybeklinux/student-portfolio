@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import *
-from users.serializers import *
+from users.serializers import UserSerializer
 import re
 
 
@@ -11,8 +11,8 @@ class TagSerializer(serializers.ModelSerializer):
 
 
 class ProjectSerializer(serializers.ModelSerializer):
-    user = ProfileSerializer(many=False)
-    tag = TagSerializer(many=True)
+    user = UserSerializer(many=False, read_only=True)
+    tag = TagSerializer(many=True, read_only=True)
     reviews = serializers.SerializerMethodField()
 
     class Meta:

@@ -1,0 +1,1133 @@
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+WARNING:django.request:Not Found: /
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /wswagger
+ERROR:django.request:Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\generators.py", line 248, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\generators.py", line 406, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\generators.py", line 448, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\view.py", line 45, in get_operation
+    responses = self.get_responses()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\view.py", line 180, in get_responses
+    response_serializers = self.get_response_serializers()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\view.py", line 235, in get_response_serializers
+    responses = self.get_default_responses()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\view.py", line 211, in get_default_responses
+    default_schema = self.serializer_to_schema(default_schema) or ''
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 438, in serializer_to_schema
+    return self.probe_inspectors(
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\field.py", line 33, in get_schema
+    return self.probe_field_inspectors(serializer, openapi.Schema, self.use_definitions)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 228, in probe_field_inspectors
+    return self.probe_inspectors(
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\field.py", line 124, in field_to_swagger_object
+    actual_schema = definitions.setdefault(ref_name, make_schema_definition)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\openapi.py", line 688, in setdefault
+    ret = maker()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\field.py", line 100, in make_schema_definition
+    child_schema = self.probe_field_inspectors(
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 228, in probe_field_inspectors
+    return self.probe_inspectors(
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\field.py", line 124, in field_to_swagger_object
+    actual_schema = definitions.setdefault(ref_name, make_schema_definition)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\openapi.py", line 688, in setdefault
+    ret = maker()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\field.py", line 93, in make_schema_definition
+    for property_name, child in serializer.fields.items():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 1051, in get_fields
+    info = model_meta.get_field_info(model)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 39, in get_field_info
+    forward_relations = _get_forward_relationships(opts)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 96, in _get_forward_relationships
+    not field.remote_field.through._meta.auto_created
+AttributeError: 'NoneType' object has no attribute '_meta'
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\students_portfolio\urls.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+ERROR:django.request:Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\generators.py", line 248, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\generators.py", line 406, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\generators.py", line 448, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\view.py", line 45, in get_operation
+    responses = self.get_responses()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\view.py", line 180, in get_responses
+    response_serializers = self.get_response_serializers()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\view.py", line 235, in get_response_serializers
+    responses = self.get_default_responses()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\view.py", line 211, in get_default_responses
+    default_schema = self.serializer_to_schema(default_schema) or ''
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 438, in serializer_to_schema
+    return self.probe_inspectors(
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\field.py", line 33, in get_schema
+    return self.probe_field_inspectors(serializer, openapi.Schema, self.use_definitions)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 228, in probe_field_inspectors
+    return self.probe_inspectors(
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\field.py", line 124, in field_to_swagger_object
+    actual_schema = definitions.setdefault(ref_name, make_schema_definition)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\openapi.py", line 688, in setdefault
+    ret = maker()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\field.py", line 100, in make_schema_definition
+    child_schema = self.probe_field_inspectors(
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 228, in probe_field_inspectors
+    return self.probe_inspectors(
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\field.py", line 124, in field_to_swagger_object
+    actual_schema = definitions.setdefault(ref_name, make_schema_definition)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\openapi.py", line 688, in setdefault
+    ret = maker()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\field.py", line 93, in make_schema_definition
+    for property_name, child in serializer.fields.items():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 1051, in get_fields
+    info = model_meta.get_field_info(model)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 39, in get_field_info
+    forward_relations = _get_forward_relationships(opts)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 96, in _get_forward_relationships
+    not field.remote_field.through._meta.auto_created
+AttributeError: 'NoneType' object has no attribute '_meta'
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+WARNING:django.request:Not Found: /
+ERROR:django.request:Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\generators.py", line 248, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\generators.py", line 406, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\generators.py", line 448, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\view.py", line 45, in get_operation
+    responses = self.get_responses()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\view.py", line 180, in get_responses
+    response_serializers = self.get_response_serializers()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\view.py", line 235, in get_response_serializers
+    responses = self.get_default_responses()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\view.py", line 211, in get_default_responses
+    default_schema = self.serializer_to_schema(default_schema) or ''
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 438, in serializer_to_schema
+    return self.probe_inspectors(
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\field.py", line 33, in get_schema
+    return self.probe_field_inspectors(serializer, openapi.Schema, self.use_definitions)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 228, in probe_field_inspectors
+    return self.probe_inspectors(
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\field.py", line 124, in field_to_swagger_object
+    actual_schema = definitions.setdefault(ref_name, make_schema_definition)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\openapi.py", line 688, in setdefault
+    ret = maker()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\field.py", line 100, in make_schema_definition
+    child_schema = self.probe_field_inspectors(
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 228, in probe_field_inspectors
+    return self.probe_inspectors(
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\field.py", line 124, in field_to_swagger_object
+    actual_schema = definitions.setdefault(ref_name, make_schema_definition)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\openapi.py", line 688, in setdefault
+    ret = maker()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\field.py", line 93, in make_schema_definition
+    for property_name, child in serializer.fields.items():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 1051, in get_fields
+    info = model_meta.get_field_info(model)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 39, in get_field_info
+    forward_relations = _get_forward_relationships(opts)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 96, in _get_forward_relationships
+    not field.remote_field.through._meta.auto_created
+AttributeError: 'NoneType' object has no attribute '_meta'
+WARNING:django.request:Not Found: /send/
+WARNING:django.request:Not Found: /send_sms/
+DEBUG:environ.environ:get 'token' casted as 'None' with default '<NoValue>'
+DEBUG:environ.environ:get 'url' casted as 'None' with default '<NoValue>'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.smsfly.uz:443
+DEBUG:urllib3.connectionpool:https://api.smsfly.uz:443 "POST / HTTP/1.1" 200 None
+INFO:users.helpers:{'success': True, 'reason': 'SUCCESS', 'resultCode': 0}
+WARNING:django.request:Not Found: /login/
+WARNING:django.request:Not Found: /register/
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+DEBUG:environ.environ:get 'token' casted as 'None' with default '<NoValue>'
+DEBUG:environ.environ:get 'url' casted as 'None' with default '<NoValue>'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.smsfly.uz:443
+DEBUG:urllib3.connectionpool:https://api.smsfly.uz:443 "POST / HTTP/1.1" 200 None
+INFO:users.helpers:{'success': True, 'reason': 'SUCCESS', 'resultCode': 0}
+ERROR:django.request:Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\views.py", line 180, in register_user
+    "user_name": full_name
+NameError: name 'full_name' is not defined
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+DEBUG:environ.environ:get 'token' casted as 'None' with default '<NoValue>'
+DEBUG:environ.environ:get 'url' casted as 'None' with default '<NoValue>'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.smsfly.uz:443
+DEBUG:urllib3.connectionpool:https://api.smsfly.uz:443 "POST / HTTP/1.1" 200 None
+INFO:users.helpers:{'success': True, 'reason': 'SUCCESS', 'resultCode': 0}
+DEBUG:environ.environ:get 'token' casted as 'None' with default '<NoValue>'
+DEBUG:environ.environ:get 'url' casted as 'None' with default '<NoValue>'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.smsfly.uz:443
+DEBUG:urllib3.connectionpool:https://api.smsfly.uz:443 "POST / HTTP/1.1" 200 None
+INFO:users.helpers:{'success': True, 'reason': 'SUCCESS', 'resultCode': 0}
+WARNING:django.request:Not Found: /logout/
+DEBUG:environ.environ:get 'token' casted as 'None' with default '<NoValue>'
+DEBUG:environ.environ:get 'url' casted as 'None' with default '<NoValue>'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.smsfly.uz:443
+DEBUG:urllib3.connectionpool:https://api.smsfly.uz:443 "POST / HTTP/1.1" 200 None
+INFO:users.helpers:{'success': True, 'reason': 'SUCCESS', 'resultCode': 0}
+WARNING:django.request:Not Found: /api/project/
+WARNING:django.request:Unauthorized: /api/projects/
+WARNING:django.request:Not Found: /api/projects/1/
+WARNING:django.request:Unauthorized: /api/projects/20/
+WARNING:django.request:Unsupported Media Type: /api/projects/
+WARNING:django.request:Unauthorized: /api/projects/
+WARNING:django.request:Unauthorized: /api/projects/
+WARNING:django.request:Unauthorized: /api/projects/
+WARNING:django.request:Bad Request: /api/projects/
+WARNING:django.request:Not Found: /api/projects/1/
+ERROR:django.request:Internal Server Error: /api/users/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 507, in to_representation
+    for field in fields:
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 1051, in get_fields
+    info = model_meta.get_field_info(model)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 39, in get_field_info
+    forward_relations = _get_forward_relationships(opts)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 96, in _get_forward_relationships
+    not field.remote_field.through._meta.auto_created
+AttributeError: 'NoneType' object has no attribute '_meta'
+WARNING:django.request:Not Found: /api/user/
+ERROR:django.request:Internal Server Error: /api/users/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 507, in to_representation
+    for field in fields:
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 1051, in get_fields
+    info = model_meta.get_field_info(model)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 39, in get_field_info
+    forward_relations = _get_forward_relationships(opts)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 96, in _get_forward_relationships
+    not field.remote_field.through._meta.auto_created
+AttributeError: 'NoneType' object has no attribute '_meta'
+WARNING:django.request:Not Found: /api/user/
+WARNING:django.request:Unauthorized: /api/users/
+ERROR:django.request:Internal Server Error: /api/users/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 507, in to_representation
+    for field in fields:
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 1051, in get_fields
+    info = model_meta.get_field_info(model)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 39, in get_field_info
+    forward_relations = _get_forward_relationships(opts)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 96, in _get_forward_relationships
+    not field.remote_field.through._meta.auto_created
+AttributeError: 'NoneType' object has no attribute '_meta'
+ERROR:django.request:Internal Server Error: /api/users/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 1051, in get_fields
+    info = model_meta.get_field_info(model)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 39, in get_field_info
+    forward_relations = _get_forward_relationships(opts)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 96, in _get_forward_relationships
+    not field.remote_field.through._meta.auto_created
+AttributeError: 'NoneType' object has no attribute '_meta'
+ERROR:django.request:Internal Server Error: /api/users/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 1051, in get_fields
+    info = model_meta.get_field_info(model)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 39, in get_field_info
+    forward_relations = _get_forward_relationships(opts)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 96, in _get_forward_relationships
+    not field.remote_field.through._meta.auto_created
+AttributeError: 'NoneType' object has no attribute '_meta'
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+ERROR:django.request:Internal Server Error: /api/users/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 507, in to_representation
+    for field in fields:
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 1051, in get_fields
+    info = model_meta.get_field_info(model)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 39, in get_field_info
+    forward_relations = _get_forward_relationships(opts)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 96, in _get_forward_relationships
+    not field.remote_field.through._meta.auto_created
+AttributeError: 'NoneType' object has no attribute '_meta'
+ERROR:django.request:Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\views.py", line 94, in get
+    schema = generator.get_schema(request, self.public)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\generators.py", line 248, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\generators.py", line 406, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\generators.py", line 448, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\view.py", line 45, in get_operation
+    responses = self.get_responses()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\view.py", line 180, in get_responses
+    response_serializers = self.get_response_serializers()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\view.py", line 235, in get_response_serializers
+    responses = self.get_default_responses()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\view.py", line 211, in get_default_responses
+    default_schema = self.serializer_to_schema(default_schema) or ''
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 438, in serializer_to_schema
+    return self.probe_inspectors(
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\field.py", line 33, in get_schema
+    return self.probe_field_inspectors(serializer, openapi.Schema, self.use_definitions)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 228, in probe_field_inspectors
+    return self.probe_inspectors(
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\field.py", line 124, in field_to_swagger_object
+    actual_schema = definitions.setdefault(ref_name, make_schema_definition)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\openapi.py", line 688, in setdefault
+    ret = maker()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\field.py", line 100, in make_schema_definition
+    child_schema = self.probe_field_inspectors(
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 228, in probe_field_inspectors
+    return self.probe_inspectors(
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\field.py", line 124, in field_to_swagger_object
+    actual_schema = definitions.setdefault(ref_name, make_schema_definition)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\openapi.py", line 688, in setdefault
+    ret = maker()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\drf_yasg\inspectors\field.py", line 93, in make_schema_definition
+    for property_name, child in serializer.fields.items():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 1051, in get_fields
+    info = model_meta.get_field_info(model)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 39, in get_field_info
+    forward_relations = _get_forward_relationships(opts)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 96, in _get_forward_relationships
+    not field.remote_field.through._meta.auto_created
+AttributeError: 'NoneType' object has no attribute '_meta'
+WARNING:django.request:Not Found: /
+WARNING:django.request:Not Found: /users
+WARNING:django.request:Not Found: /users/
+ERROR:django.request:Internal Server Error: /api/users/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 507, in to_representation
+    for field in fields:
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 1051, in get_fields
+    info = model_meta.get_field_info(model)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 39, in get_field_info
+    forward_relations = _get_forward_relationships(opts)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\utils\model_meta.py", line 96, in _get_forward_relationships
+    not field.remote_field.through._meta.auto_created
+AttributeError: 'NoneType' object has no attribute '_meta'
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\models.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\models.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\models.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\models.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\models.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+WARNING:django.request:Bad Request: /api/users/
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+WARNING:django.request:Not Found: /api/projects/1/
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+WARNING:django.request:Not Found: /api/projects/2/
+WARNING:django.request:Not Found: /api/projects/3/
+WARNING:django.request:Bad Request: /api/users/2/
+WARNING:django.request:Bad Request: /api/users/2/
+WARNING:django.request:Bad Request: /api/users/2/
+WARNING:django.request:Not Found: /api/users/2/
+WARNING:django.request:Bad Request: /api/projects/
+WARNING:django.request:Bad Request: /api/projects/
+WARNING:django.request:Bad Request: /api/projects/
+WARNING:django.request:Bad Request: /api/projects/
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+WARNING:django.request:Bad Request: /api/projects/
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+WARNING:django.request:Bad Request: /api/projects/
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+ERROR:django.request:Internal Server Error: /api/projects/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\mixins.py", line 20, in create
+    headers = self.get_success_headers(serializer.data)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py", line 20, in to_representation
+    data['user'] = UserSerializer(User.objects.get(pk=data['user'])).data
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+users.models.User.DoesNotExist: User matching query does not exist.
+ERROR:django.request:Internal Server Error: /api/projects/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\mixins.py", line 20, in create
+    headers = self.get_success_headers(serializer.data)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py", line 20, in to_representation
+    data['user'] = UserSerializer(User.objects.get(pk=data['user'])).data
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+users.models.User.DoesNotExist: User matching query does not exist.
+ERROR:django.request:Internal Server Error: /api/projects/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\mixins.py", line 20, in create
+    headers = self.get_success_headers(serializer.data)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py", line 20, in to_representation
+    data['user'] = UserSerializer(User.objects.get(pk=data['user'])).data
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+users.models.User.DoesNotExist: User matching query does not exist.
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+ERROR:django.request:Internal Server Error: /api/projects/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\mixins.py", line 20, in create
+    headers = self.get_success_headers(serializer.data)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py", line 21, in to_representation
+    data['user'] = UserSerializer(User.objects.get(pk=data['user'])).data
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+users.models.User.DoesNotExist: User matching query does not exist.
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+ERROR:django.request:Internal Server Error: /api/projects/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\mixins.py", line 20, in create
+    headers = self.get_success_headers(serializer.data)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py", line 21, in to_representation
+    data['user'] = UserSerializer(User.objects.get(pk=data['user'])).data
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+users.models.User.DoesNotExist: User matching query does not exist.
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+ERROR:django.request:Internal Server Error: /api/projects/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\mixins.py", line 20, in create
+    headers = self.get_success_headers(serializer.data)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py", line 21, in to_representation
+    data['user'] = UserSerializer(User.objects.get(pk=data['user'])).data
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+users.models.User.DoesNotExist: User matching query does not exist.
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+ERROR:django.request:Internal Server Error: /api/projects/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\mixins.py", line 20, in create
+    headers = self.get_success_headers(serializer.data)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py", line 21, in to_representation
+    data['user'] = UserSerializer(User.objects.get(pk=data['user'])).data
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+users.models.User.DoesNotExist: User matching query does not exist.
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\serializers.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+WARNING:django.request:Not Found: /api/projects/
+WARNING:django.request:Not Found: /api/projects/
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+WARNING:django.request:Not Found: /api/projects/
+WARNING:django.request:Not Found: /api/tag/
+WARNING:django.request:Not Found: /api/projects/
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+WARNING:django.request:Not Found: /api/projects/
+WARNING:django.request:Not Found: /api/projects/
+ERROR:django.request:Internal Server Error: /api/projects
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/projects/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+WARNING:django.request:Not Found: /api/projects/
+WARNING:django.request:Not Found: /api/projects/
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+WARNING:django.request:Not Found: /api/projects/
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+ERROR:django.request:Internal Server Error: /api/projects/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\views.py", line 19, in create
+    tags = Tag.objects.filter(id__in=data.get('tag'))
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\query.py", line 1420, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\query.py", line 1438, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\query.py", line 1445, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\sql\query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\sql\query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\sql\query.py", line 1478, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\sql\query.py", line 1303, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\lookups.py", line 426, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\lookups.py", line 270, in get_prep_lookup
+    for rhs_value in self.rhs:
+TypeError: 'NoneType' object is not iterable
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+ERROR:django.request:Internal Server Error: /api/projects/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\views.py", line 19, in create
+    tags = get_object_or_404(Tag, id__in=data.get('tag'))
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\query.py", line 653, in get
+    raise self.model.MultipleObjectsReturned(
+projects.models.Tag.MultipleObjectsReturned: get() returned more than one Tag -- it returned 2!
+ERROR:django.request:Internal Server Error: /api/projects/
+Traceback (most recent call last):
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\views.py", line 19, in create
+    tags = get_object_or_404(Tag, id__in=data.get('tag'))
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\virtual\lib\site-packages\django\db\models\query.py", line 653, in get
+    raise self.model.MultipleObjectsReturned(
+projects.models.Tag.MultipleObjectsReturned: get() returned more than one Tag -- it returned 2!
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+INFO:django.utils.autoreload:C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\projects\views.py changed, reloading.
+DEBUG:environ.environ:Read environment variables from: C:\Users\oybek\Desktop\Desktop\Amaliyotga asoslangan video darslar\students_portfolio\users\.env
+WARNING:django.request:Not Found: /api/message/
+WARNING:django.request:Not Found: /api/messages/3/
+WARNING:django.request:Not Found: /api/messages/2/
+WARNING:django.request:Bad Request: /api/messages/
+WARNING:django.request:Bad Request: /api/messages/
+WARNING:django.request:Bad Request: /api/messages/2/
+WARNING:django.request:Not Found: /api/skills/3/
+WARNING:django.request:Bad Request: /api/skills/
+WARNING:django.request:Bad Request: /api/skills/
+WARNING:django.request:Not Found: /api/reviews/3/
+WARNING:django.request:Not Found: /api/reviews/2/
+WARNING:django.request:Bad Request: /api/reviews/
+WARNING:django.request:Bad Request: /api/reviews/
+WARNING:django.request:Bad Request: /api/reviews/2/

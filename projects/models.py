@@ -1,5 +1,5 @@
 from django.db import models
-from users.models import Profile
+from users.models import User
 
 
 class Project(models.Model):
@@ -11,7 +11,7 @@ class Project(models.Model):
     vote_count = models.IntegerField(default=0) # Majburiy emas
     vote_ratio = models.IntegerField(default=0) # Majburiy emas
     created = models.DateField(auto_now_add=True) # Majburiy emas
-    user = models.ForeignKey(Profile, on_delete=models.SET_NULL, null=True, related_name="projects") # Majburiy emas
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, related_name="projects") # Majburiy emas
     tag = models.ManyToManyField('Tag', blank=True, related_name="project_tag") # Majburiy emas
 
     def __str__(self):
@@ -35,8 +35,8 @@ class Message(models.Model):
     subject = models.CharField(max_length=100)
     body = models.TextField()
     created = models.DateField(auto_now_add=True)
-    sender = models.ForeignKey(Profile, on_delete=models.SET_NULL, null=True, related_name="sender_message")
-    receiver = models.ForeignKey(Profile, on_delete=models.SET_NULL, null=True, related_name="receiver_message")
+    sender = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, related_name="sender_message")
+    receiver = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, related_name="receiver_message")
 
     def __str__(self):
         return f"{self.subject}"
@@ -46,7 +46,7 @@ class Skill(models.Model):
     name = models.CharField(max_length=10)
     description = models.TextField()
     created = models.DateField(auto_now_add=True)
-    user = models.ForeignKey(Profile, on_delete=models.SET_NULL, null=True, related_name="user_skills")
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, related_name="user_skills")
 
     def __str__(self):
         return f"{self.name}"
@@ -55,7 +55,7 @@ class Skill(models.Model):
 class Review(models.Model):
     body = models.TextField()
     value = models.IntegerField(default=0)
-    user = models.ForeignKey(Profile, on_delete=models.SET_NULL, null=True)
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     project = models.ForeignKey(Project, on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
