@@ -1,14 +1,17 @@
 from .serializers import *
 from rest_framework import viewsets, mixins, generics
 from rest_framework.permissions import IsAuthenticated
-from rest_framework.decorators import api_view, permission_classes
+from rest_framework.decorators import api_view, permission_classes, authentication_classes
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework.authentication import BasicAuthentication, SessionAuthentication
+from rest_framework_simplejwt.authentication import JWTAuthentication
 
 
 # api_view
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
+@authentication_classes([BasicAuthentication, SessionAuthentication])
 def get_projects(request):
     print(request.user)
     projects = Project.objects.all().order_by('-vote_count')
@@ -19,6 +22,7 @@ def get_projects(request):
 # APIVIEW
 class ProjectAPIView(APIView):
     permission_classes = [IsAuthenticated]
+    authentication_classes = [BasicAuthentication, SessionAuthentication]
 
     def get(self, request):
         projects = Project.objects.all()
@@ -48,6 +52,12 @@ class ProjectViewSet(viewsets.ModelViewSet):
     queryset = Project.objects.all()
     serializer_class = ProjectSerializer
     permission_classes = [IsAuthenticated]
+    authentication_classes = [JWTAuthentication]
+
+
+
+
+
 
 
 @api_view(['POST'])

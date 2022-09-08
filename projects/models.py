@@ -43,7 +43,7 @@ class Message(models.Model):
 
 
 class Skill(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=10)
     description = models.TextField()
     created = models.DateField(auto_now_add=True)
     user = models.ForeignKey(Profile, on_delete=models.SET_NULL, null=True, related_name="user_skills")

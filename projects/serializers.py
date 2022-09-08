@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import *
 from users.serializers import *
+import re
 
 
 class TagSerializer(serializers.ModelSerializer):
@@ -10,13 +11,14 @@ class TagSerializer(serializers.ModelSerializer):
 
 
 class ProjectSerializer(serializers.ModelSerializer):
-    user = UserForProjectSerializer(many=False)
+    user = ProfileSerializer(many=False)
     tag = TagSerializer(many=True)
     reviews = serializers.SerializerMethodField()
 
     class Meta:
         model = Project
         fields = '__all__'
+
 
     def get_reviews(self, obj):
         reviews = obj.review_set.all()
@@ -29,6 +31,19 @@ class SkillSerializer(serializers.ModelSerializer):
         model = Skill
         fields = '__all__'
 
+    # def validate_name(self, value):
+    #     if re.search('\d', value):
+    #         raise serializers.ValidationError('Malaka nomida son kelmasin')
+    #
+    #     return value.lower()
+
+    def validate(self, data):
+        if re.search('\d', data['name']):
+            raise serializers.ValidationError('Malaka nomida son kelmasin')
+        if 1 < len(data['description']) < 10:
+            raise serializers.ValidationError('Tavsif 10 harfdan kam bo''lmasin')
+        data['name'] = data['name'].lower()
+        return data
 
 class MessageSerializer(serializers.ModelSerializer):
     class Meta:

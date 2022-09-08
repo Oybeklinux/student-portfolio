@@ -2,6 +2,8 @@ from django.db import models
 import os
 from django.core.exceptions import ValidationError
 from django.contrib.auth.models import User
+from django.db.models.signals import post_save, post_delete
+from django.dispatch import receiver
 
 
 def validate_file_extension(value):
@@ -34,3 +36,21 @@ class Profile(models.Model):
     def __str__(self):
         # return f"{self.user.last_name} {self.user.first_name}"
         return f"{self.user.username}"
+
+@receiver(post_save, sender=User)
+def create_profile(sender, instance, created, **kwargs):
+    user = instance
+    if created:
+        Profile.objects.create(
+            user=user
+        )
+
+
+@receiver(post_delete, sender=Profile)
+def delete_user(sender, instance, **kwargs):
+    user = instance.user
+    user.delete()
+
+
+# post_save.connect(create_profile, sender=User)
+# post_delete.connect(delete_user, sender=Profile)
